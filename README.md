@@ -1,6 +1,6 @@
 # ts-graphql
 
-[1. GraphQL and TypeScript: GraphQL Server Setup](https://www.youtube.com/watch?v=NfqDaFN2bnA&list=PLASldBPN_pkAj8b0Ny5IGoYgsnqylP2c-)
+## [1. GraphQL and TypeScript: GraphQL Server Setup](https://www.youtube.com/watch?v=NfqDaFN2bnA&list=PLASldBPN_pkAj8b0Ny5IGoYgsnqylP2c-)
 
 [Apollo GraphQL Doc](https://www.apollographql.com/docs/)
 
@@ -15,3 +15,5 @@ https://randomuser.me/
 [Prettier: install](https://prettier.io/docs/en/install.html)
 https://github.com/prettier/eslint-config-prettier
 https://prettier.io/docs/en/precommit.html
+
+## [2. GraphQL and TypeScript: TypeScript Setup](https://www.youtube.com/watch?v=2MBYrIxYU1E&list=PLASldBPN_pkAj8b0Ny5IGoYgsnqylP2c-&index=2)

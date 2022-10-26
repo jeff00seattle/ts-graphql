@@ -5,3 +5,10 @@
 [Apollo GraphQL Doc](https://www.apollographql.com/docs/)
 
 [Get started with Apollo Server](https://www.apollographql.com/docs/apollo-server/getting-started)
+
+https://randomuser.me/
+
+[Building a Trello clone with React Hooks and GraphQL](https://blog.logrocket.com/building-a-trello-clone-with-react-hooks-and-graphql/)
+
+[GraphQL schema basics](https://www.apollographql.com/docs/apollo-server/schema/schema/)
+

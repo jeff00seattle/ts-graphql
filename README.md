@@ -12,3 +12,6 @@ https://randomuser.me/
 
 [GraphQL schema basics](https://www.apollographql.com/docs/apollo-server/schema/schema/)
 
+[Prettier: install](https://prettier.io/docs/en/install.html)
+https://github.com/prettier/eslint-config-prettier
+https://prettier.io/docs/en/precommit.html

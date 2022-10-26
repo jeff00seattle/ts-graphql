@@ -2,3 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 git-format-staged -f 'prettier --ignore-unknown --stdin --stdin-filepath "{}"' .
+npm test

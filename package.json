@@ -1,0 +1,42 @@
+{
+  "name": "ts-graphql",
+  "version": "1.0.0",
+  "description": "GraphQL and TypeScript",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js",
+    "prettier:write": "npx prettier --write .",
+    "prettier:check": "npx prettier --check .",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeff00seattle/ts-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeff00seattle/ts-graphql/issues"
+  },
+  "homepage": "https://github.com/jeff00seattle/ts-graphql#readme",
+  "dependencies": {
+    "@apollo/server": "^4.0.3",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.5",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "eslint-config-prettier": "^8.5.0",
+    "git-format-staged": "^3.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}

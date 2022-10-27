@@ -1,4 +1,4 @@
-import { ApolloServer, gql } from "apollo-server";
+import {ApolloServer, gql, ServerInfo} from "apollo-server";
 import { ApolloServerPluginLandingPageLocalDefault } from "apollo-server-core";
 
 const typeDefs = require("./graphql/schema").typeDefs();
@@ -15,6 +15,6 @@ const server = new ApolloServer({
 
 const port = process.env.PORT || 4000;
 
-server.listen({ port }).then(({ url }) => {
-  console.log(`🚀  Server  ready at ${url}`);
+server.listen({ port }).then((response: ServerInfo) => {
+  console.log(JSON.stringify(response, null, 2));
 });

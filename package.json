@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/jeff00seattle/ts-graphql/issues"
   },
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "prebuild": "npm run code:clean",
     "build": "npm run build:only",
@@ -21,13 +21,12 @@
     "code:clean": "gts clean",
     "code:fix": "gts fix",
     "precompile": "rm -fR ./dist",
-    "compile": "tsc",
-    "predev": "tsc",
+    "compile": "tsc --build --clean",
     "dev": "ts-node-dev --transpile-only --no-notify --exit-child src/index.ts",
     "npm:format": "npx prettier-package-json --write package.json",
     "prepare": "husky install",
-    "prestart": "tsc",
-    "start": "node dist/src/index.js",
+    "prestart": "npm run compile",
+    "start": "npx ts-node src/index.ts",
     "prettier:check": "npx prettier --check .",
     "prettier:write": "npx prettier --write ."
   },
@@ -38,7 +37,7 @@
     "graphql": "^16.6.0"
   },
   "devDependencies": {
-    "@types/node": "^18.11.5",
+    "@types/node": "^18.11.7",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
     "eslint": "^8.26.0",

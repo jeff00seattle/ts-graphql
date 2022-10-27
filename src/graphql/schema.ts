@@ -4,7 +4,7 @@ import { gql } from "apollo-server";
 // that together define the "shape" of queries that are executed against
 // your data.
 
-const typeDefs = () => {
+export const typeDefs = () => {
     return gql`
       # This "Book" type defines the queryable fields for every book in our data source.
       type Book {
@@ -32,8 +32,4 @@ const typeDefs = () => {
         users: [User]
       }
     `;
-}
-
-export {
-    typeDefs
 }

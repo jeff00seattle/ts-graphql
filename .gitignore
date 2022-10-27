@@ -1,3 +1,6 @@
 .idea/
 dist/
+_tmp/
 node_modules/
+
+src/**/*.js

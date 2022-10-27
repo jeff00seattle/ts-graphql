@@ -1,4 +1,4 @@
-export const users = () => {
+const users = () => {
     return [
         {
             name: "Vera Hawkins",
@@ -13,7 +13,7 @@ export const users = () => {
     ]
 }
 
-export const books = () => {
+const books = () => {
     return [
         {
             title: "The Awakening",
@@ -24,4 +24,9 @@ export const books = () => {
             author: "Paul Auster",
         },
     ]
+}
+
+export {
+    users,
+    books
 }

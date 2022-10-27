@@ -1,20 +1,8 @@
 import { ApolloServer, gql } from "apollo-server";
 import { ApolloServerPluginLandingPageLocalDefault } from "apollo-server-core";
 
-const users = require("../database/mockdb").users();
-const books = require("../database/mockdb").books();
-
-const typeDefs = require("./graphq/schema").typeDefs();
-
-
-// Resolvers define how to fetch the types defined in your schema.
-// This resolver retrieves books from the "books" array above.
-const resolvers = {
-  Query: {
-    books: () => books,
-    users: () => users,
-  },
-};
+const typeDefs = require("./graphql/schema").typeDefs();
+const resolvers = require("./graphql/resolvers").resolvers();
 
 // The ApolloServer constructor requires two parameters: your schema
 // definition and your set of resolvers.

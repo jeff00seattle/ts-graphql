@@ -33,6 +33,7 @@
   "overrides": [
     {
       "files": [
+        "database/**/*.ts",
         "src/**/*.ts"
       ],
       "rules": {

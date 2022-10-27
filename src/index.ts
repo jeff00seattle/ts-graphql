@@ -1,29 +1,7 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 
-const books = [
-  {
-    title: "The Awakening",
-    author: "Kate Chopin",
-  },
-  {
-    title: "City of Glass",
-    author: "Paul Auster",
-  },
-];
-
-const users = [
-  {
-    name: "Vera Hawkins",
-    email: "vera.hawkins@example.com",
-    projects: [{ title: "vera.hawkins site 2022", active: true }],
-  },
-  {
-    name: "Courtney Schmidt",
-    email: "courtney.schmidt@example.com",
-    projects: [{ title: "courtney.schmidt site 2022", active: true }],
-  },
-];
+import { users, books } from "../database";
 
 // A schema is a collection of type definitions (hence "typeDefs")
 // that together define the "shape" of queries that are executed against
@@ -62,8 +40,8 @@ const typeDefs = `#graphql
 // This resolver retrieves books from the "books" array above.
 const resolvers = {
   Query: {
-    books: () => books,
-    users: () => users,
+    books: () => books(),
+    users: () => users(),
   },
 };
 

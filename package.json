@@ -13,7 +13,7 @@
     "url": "https://github.com/jeff00seattle/ts-graphql/issues"
   },
   "type": "module",
-  "main": "index.js",
+  "main": "dist/src/index.js",
   "scripts": {
     "prebuild": "npm run code:clean",
     "build": "npm run build:only",
@@ -24,8 +24,8 @@
     "compile": "tsc",
     "npm:format": "npx prettier-package-json --write package.json",
     "prepare": "husky install",
-    "prestart": "npm run build",
-    "start": "npm run compile && node ./dist/index.js",
+    "prestart": "npm run compile",
+    "start": "npx ts-node ./src/index.ts",
     "prettier:check": "npx prettier --check .",
     "prettier:write": "npx prettier --write ."
   },

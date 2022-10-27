@@ -22,6 +22,8 @@
     "code:fix": "gts fix",
     "precompile": "rm -fR ./dist",
     "compile": "tsc",
+    "predev": "tsc",
+    "dev": "ts-node-dev --transpile-only --no-notify --exit-child src/index.ts",
     "npm:format": "npx prettier-package-json --write package.json",
     "prepare": "husky install",
     "prestart": "tsc",

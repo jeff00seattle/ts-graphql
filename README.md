@@ -15,3 +15,13 @@
 
 * https://github.com/howtographql/typescript-apollo
 * https://www.apollographql.com/docs/apollo-server/api/apollo-server
+
+## [3. GraphQL and TypeScript: Adding a Database](https://www.youtube.com/watch?v=YudkjAsZJk0&list=PLASldBPN_pkAj8b0Ny5IGoYgsnqylP2c-&index=3)
+
+## [4. GraphQL and TypeScript: Adding a Database - Part 2](https://www.youtube.com/watch?v=gt2Z6zAGtc8&list=PLASldBPN_pkAj8b0Ny5IGoYgsnqylP2c-&index=4)
+
+## [5. GraphQL and TypeScript: Using an ORM - Sequelize](https://www.youtube.com/watch?v=hjQ61H_7YwM&list=PLASldBPN_pkAj8b0Ny5IGoYgsnqylP2c-&index=5)
+
+## [6. GraphQL and TypeScript: Using an ORM - Prisma 2](https://www.youtube.com/watch?v=aqp8B_lekDE&list=PLASldBPN_pkAj8b0Ny5IGoYgsnqylP2c-&index=6)
+
+## [7. GraphQL and TypeScript: Data Source Configuration - Apollo Server](https://www.youtube.com/watch?v=LaQt-Q5hya8&list=PLASldBPN_pkAj8b0Ny5IGoYgsnqylP2c-&index=7)

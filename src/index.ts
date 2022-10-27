@@ -1,14 +1,15 @@
 // import { ApolloServer } from "apollo-server";
 
-import { ApolloServer } from "apollo-server";
+import { ApolloServer, gql } from "apollo-server";
 import { ApolloServerPluginLandingPageLocalDefault } from "apollo-server-core";
 
-import { users, books } from "./mockdb";
+const users = require("../database/mockdb").users();
+const books = require("../database/mockdb").books();
 
 // A schema is a collection of type definitions (hence "typeDefs")
 // that together define the "shape" of queries that are executed against
 // your data.
-const typeDefs = `#graphql
+const typeDefs = gql`
   # Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
 
   # This "Book" type defines the queryable fields for every book in our data source.
@@ -16,13 +17,13 @@ const typeDefs = `#graphql
     title: String
     author: String
   }
-  
+
   type User {
     name: String
     email: String
     projects: [Project]
   }
-  
+
   type Project {
     title: String
     active: Boolean!
@@ -42,8 +43,8 @@ const typeDefs = `#graphql
 // This resolver retrieves books from the "books" array above.
 const resolvers = {
   Query: {
-    books: () => books(),
-    users: () => users(),
+    books: () => books,
+    users: () => users,
   },
 };
 

@@ -20,6 +20,20 @@
 
 ## [3. GraphQL and TypeScript: Adding a Database](https://www.youtube.com/watch?v=YudkjAsZJk0&list=PLASldBPN_pkAj8b0Ny5IGoYgsnqylP2c-&index=3)
 
+### Install Database
+
+#### MongoDB
+
+https://treehouse.github.io/installation-guides/mac/mongo-mac.html
+
+```console
+$ brew install mongodb
+```
+
+#### Postgres
+
+https://wiki.postgresql.org/wiki/Homebrew
+
 ## [4. GraphQL and TypeScript: Adding a Database - Part 2](https://www.youtube.com/watch?v=gt2Z6zAGtc8&list=PLASldBPN_pkAj8b0Ny5IGoYgsnqylP2c-&index=4)
 
 ## [5. GraphQL and TypeScript: Using an ORM - Sequelize](https://www.youtube.com/watch?v=hjQ61H_7YwM&list=PLASldBPN_pkAj8b0Ny5IGoYgsnqylP2c-&index=5)

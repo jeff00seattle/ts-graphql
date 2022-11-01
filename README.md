@@ -130,3 +130,75 @@ Success [HTTP status: 200]
 
 -------------------------
 ```
+
+## Download GraphQL Schema
+
+[How to Retrieve a GraphQL Schema](https://medium.com/@mrthankyou/how-to-get-a-graphql-schema-28915025de0e#:~:text=How%20To%20Get%20The%20Schema%20%E2%80%94%20Introspection%20Queries,called%20a%20GraphQL%20introspection%20query.)
+
+```console
+curl 'http://localhost:4000/' \
+  --header 'Content-Type: application/json' \
+  --header 'Accept: application/json' \
+  --compressed \
+  --data-binary '{"query":"{\n\t__schema{\n queryType {\n fields{\n name\n }\n }\n }\n}"}' | jq
+
+{
+  "data": {
+    "__schema": {
+      "queryType": {
+        "fields": [
+          {
+            "name": "books"
+          },
+          {
+            "name": "users"
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+```console
+curl 'https://countries.trevorblades.com/' \
+  --header 'Content-Type: application/json' \
+  --header 'Accept: application/json' \
+  --compressed \
+  --data-binary '{"query":"{\n\t__schema{\n queryType {\n fields{\n name\n }\n }\n }\n}"}' | jq
+
+{
+  "data": {
+    "__schema": {
+      "queryType": {
+        "fields": [
+          {
+            "name": "_entities"
+          },
+          {
+            "name": "_service"
+          },
+          {
+            "name": "countries"
+          },
+          {
+            "name": "country"
+          },
+          {
+            "name": "continents"
+          },
+          {
+            "name": "continent"
+          },
+          {
+            "name": "languages"
+          },
+          {
+            "name": "language"
+          }
+        ]
+      }
+    }
+  }
+}
+```
